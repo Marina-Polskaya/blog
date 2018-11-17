@@ -1,10 +1,12 @@
 body {
 	margin: 0;
-	font-size: 18px;
 	font-family: Comic Sans MS, Comic Sans;
 	background-color: #F5F5F5;
 }
 
+span {
+	font-size: 22px;
+}
 
 
 .top {
@@ -14,27 +16,41 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100%;
-	height: 80px;
+	height: 60px;
 	color: #fff;
 	font-weight: bold;
 	background-color: #008080;
 }
-.logo {
+.bigLogo {
+	display: flex;
+	flex-direction: row;
 	width: 300px;
-	height: 80px;
+	height: 60px;
+}
+.text {
+	width: 210px;
+	height: 60px;
 	text-align: center;
-	line-height: 70px;
-	font-size: 22px;
+	line-height: 55px;
+	font-size: 14px;
+}
+.imgLogo {
+	margin: auto;
+	width: 90px;
+	height: 60px;
+	background: url(../image/mount.png) 0 0 no-repeat;
+	background-size: cover;
 }
 .authBox {
 	position: relative;
-	width: 250px;
-	height: 80px;
+	min-width: 200px;
+	height: 60px;
+	font-size: 10px;
 }
 .regist {
 	position: absolute;
 	left: 0;
-	top: 20px;
+	top: 10px;
 	width: 130px;
 	height: 40px;
 	text-align: center;
@@ -43,7 +59,7 @@ body {
 .auth {
 	position: absolute;
 	right: 0;
-	top: 20px;
+	top: 10px;
 	width: 70px;
 	height: 40px;
 	text-align: center;
@@ -63,7 +79,7 @@ body {
 }
 .topHide {
 	width: 1000px;
-	height: 78px;
+	height: 75px;
 }
 .middleBox {
 	width: 1000px;
