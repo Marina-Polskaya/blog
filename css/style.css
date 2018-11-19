@@ -72,7 +72,7 @@ button {
 	text-align: center;
 	line-height: 35px;
 }
-
+/*---------------------------------body-------------------------------------*/
 .wrapper {
 	display: flex;
 	flex-direction: row;
@@ -80,131 +80,50 @@ button {
 	justify-content: space-around;
 }
 .wrapperMini {
-	width: 1000px;
-	min-height: 800px;
-}
-.topHide {
-	width: 1000px;
-	height: 80px;
-}
-.middleBox {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 1000px;
-	min-height: 800px;
-	background-color: #fff;
+	margin-top: 90px;
+	margin-bottom: 30px;
+	width: 800px;
 }
-.prevBigBox {
-	width: 1000px;
-}
-.preview {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 830px;
-	height: 360px;
-	border: 1px solid #008080;
-}
-.leftPrev {
-	/*position: relative;*/
-	width: 150px;
-	height: 280px;
-	text-align: left;
-	border: 1px solid #008080;
-}
-.nameAuthor {
-	width: 150px;
+/*---------------------------------label--------------------------------------*/
+.leftLabel {
+	width: 170px;
 	height: 70px;
-	line-height: 10px;
-	border: 1px solid #008080;
+	color: #fff;
+	background-color: #008080;
 }
-.name {
-	padding: 10px;
-	width: 130px;
-	height: 15px;
-	border: 1px solid #008080;
-}
-.photoAuthorBox {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 150px;
-	height: 120px;
-	border: 3px solid #008080;
-}
-.photoAuthor {
-	margin: auto;
-	width: 70px;
-	height: 100px;
-	background: url(../image/girl.jpg) 0 0 no-repeat;
-	background-size: cover;
-	/*border: 5px solid #008080;*/
-}
-.date {
-	width: 150px;
-	height: 70px;
-	border: 1px solid #008080;
-}
-.topDate {
+.labelMini {
 	padding: 10px;
 	height: 15px;
-	text-align: left;
-	border: 1px solid #008080;
 }
-.leftLittleSpace {
-	width: 150px;
-	height: 5px;
-	background-color: #F5F5F5;
-}
-.midPrev {
-	width: 5px;
-	height: 360px;
-	background-color: #F5F5F5;
-	/*border: 1px solid #008080;*/
-}
-.rightPrev {
-	padding-bottom: 10px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 500px;
-	height: 350px;
-	/*border: 1px solid #008080;*/
-}
-.header {
-	margin-top: 10px;
-	max-width: 500px;
-	min-width: 350px;
-	height: 50px;
-	color: #008080;
-	font-size: 20px;
-	font-weight: bold;
-	text-align: center;
-	line-height: 50px;
-	border: 1px solid #008080;
-}
-.picture {
-	width: 385px;
+/*---------------------------------preview------------------------------------*/
+.previewBox {
+	width: 628px;
 	height: 250px;
-	background: url(../image/hallstatt.jpg) 0 0 no-repeat;
-	background-size: cover;
-	border: 5px solid #008080;
+	background-color: #fff;
+	border: 1px solid #008080;
+	border-style: dashed;
 }
-.prevBottom {
+.leftPrevBox {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 1000px;
-	height: 40px;
-	/*border: 1px solid #008080;*/
+	width: 315px;
+	height: 250px;
 }
-.space {
-	width: 1005px;
-	height: 30px;
-	background-color: #F5F5F5;
+.rightPrevBox {
+	width: 315px;
+	height: 250px;
+}
+/*----------------------------------image--------------------------------------*/
+.imageBox {
+	margin: auto;
+	width: 280px;
+	height: 200px;
+	background: url('../image/hallstatt.jpg') 0 0 no-repeat;
+	background-size: cover;
+	border: 3px solid #008080;
 }
