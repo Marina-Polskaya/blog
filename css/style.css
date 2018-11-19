@@ -3,13 +3,13 @@ body {
 	font-family: 'Lato', sans-serif;
 	background-color: #F5F5F5;
 	color: #008080;
-	font-weight: bold;
-	text-align: center;
+	font-size: 14px;
+	text-align: left;
 }
 button {
 	margin: auto;
-	width: 230px;
-	height: 50px;
+	width: 140px;
+	height: 40px;
 	background-color: #008080;
 	color: #fff;
 	border: none;
@@ -26,6 +26,7 @@ button {
 	height: 60px;
 	color: #fff;
 	background-color: #008080;
+	font-weight: bold;
 }
 .bigLogo {
 	display: flex;
@@ -79,11 +80,11 @@ button {
 	justify-content: space-around;
 }
 .wrapperMini {
-	width: 830px;
+	width: 1000px;
 	min-height: 800px;
 }
 .topHide {
-	width: 830px;
+	width: 1000px;
 	height: 80px;
 }
 .middleBox {
@@ -91,116 +92,104 @@ button {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 830px;
+	width: 1000px;
 	min-height: 800px;
 	background-color: #fff;
 }
 .prevBigBox {
-	width: 830px;
+	width: 1000px;
 }
 .preview {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 830px;
-	height: 410px;
-	/*border: 1px solid #008080;*/
+	height: 360px;
+	border: 1px solid #008080;
 }
 .leftPrev {
 	/*position: relative;*/
-	width: 250px;
-	height: 410px;
-	/*border: 1px solid #008080;*/
-}
-.author {
-	width: 250px;
-	height: 260px;
+	width: 150px;
+	height: 280px;
+	text-align: left;
+	border: 1px solid #008080;
 }
 .nameAuthor {
-	width: 250px;
+	width: 150px;
 	height: 70px;
 	line-height: 10px;
-}
-.headerName {
-	padding: 10px;
-	width: 230px;
-	height: 15px;
+	border: 1px solid #008080;
 }
 .name {
 	padding: 10px;
-	width: 230px;
+	width: 130px;
 	height: 15px;
+	border: 1px solid #008080;
 }
 .photoAuthorBox {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 250px;
-	height: 190px;
+	width: 150px;
+	height: 120px;
+	border: 3px solid #008080;
 }
 .photoAuthor {
-	width: 115px;
-	height: 160px;
+	margin: auto;
+	width: 70px;
+	height: 100px;
 	background: url(../image/girl.jpg) 0 0 no-repeat;
 	background-size: cover;
 	/*border: 5px solid #008080;*/
 }
 .date {
-	width: 250px;
+	width: 150px;
 	height: 70px;
+	border: 1px solid #008080;
 }
 .topDate {
-	width: 250;
-	height: 35px;
-	text-align: center;
-	line-height: 35px;
-}
-.bottomDate{
-	width: 250;
-	height: 35px;
-	text-align: center;
-	line-height: 30px;
-}
-.readButton {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 250px;
-	height: 70px;
+	padding: 10px;
+	height: 15px;
+	text-align: left;
+	border: 1px solid #008080;
 }
 .leftLittleSpace {
-	width: 250px;
+	width: 150px;
 	height: 5px;
 	background-color: #F5F5F5;
 }
 .midPrev {
 	width: 5px;
-	height: 410px;
+	height: 360px;
 	background-color: #F5F5F5;
+	/*border: 1px solid #008080;*/
 }
 .rightPrev {
+	padding-bottom: 10px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	width: 572px;
-	height: 410px;
+	width: 500px;
+	height: 350px;
+	/*border: 1px solid #008080;*/
 }
 .header {
-	max-width: 670px;
+	margin-top: 10px;
+	max-width: 500px;
 	min-width: 350px;
-	height: 40px;
+	height: 50px;
 	color: #008080;
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 60px;
+	line-height: 50px;
+	border: 1px solid #008080;
 }
 .picture {
-	width: 499px;
-	height: 300px;
+	width: 385px;
+	height: 250px;
 	background: url(../image/hallstatt.jpg) 0 0 no-repeat;
 	background-size: cover;
 	border: 5px solid #008080;
