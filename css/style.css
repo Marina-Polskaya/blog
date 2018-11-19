@@ -7,13 +7,19 @@ body {
 	text-align: left;
 }
 button {
-	margin: auto;
-	width: 140px;
+	margin: 20px 0 0px 57px;
+	width: 190px;
 	height: 40px;
 	background-color: #008080;
 	color: #fff;
 	border: none;
 	font-weight: bold;
+	cursor: pointer;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
 }
 
 .top {
@@ -96,11 +102,14 @@ button {
 	background-color: #008080;
 }
 .labelMini {
-	padding: 10px;
+	padding: 10px 10px 5px 10px;
 	height: 15px;
 }
 /*---------------------------------preview------------------------------------*/
 .previewBox {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 30px;
 	width: 628px;
 	height: 250px;
 	background-color: #fff;
@@ -116,14 +125,31 @@ button {
 }
 .rightPrevBox {
 	width: 315px;
-	height: 250px;
+	height: 200px;
 }
 /*----------------------------------image--------------------------------------*/
 .imageBox {
-	margin: auto;
-	width: 280px;
-	height: 200px;
+	margin: 27px 0px 0px 15px;
+	width: 270px;
+	height: 190px;
 	background: url('../image/hallstatt.jpg') 0 0 no-repeat;
 	background-size: cover;
 	border: 3px solid #008080;
 }
+/*-----------------------------------text--------------------------------------*/
+.headerBox {
+	margin: 15px 20px 5px 10px;
+	width: 280px; /*375*/
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden; /*около 40 символов*/
+}
+.textPreview{
+	width: 280px;
+	height: 102px;
+	margin: 0 20px 0 15px;
+	overflow: hidden;
+	/*color: #000;*/
+}
+
