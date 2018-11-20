@@ -9,7 +9,7 @@
 <body>
 	<div class="top">
 		<div class="bigLogo">
-			<div class="home"><a href="">VGO.RU</a></div>
+			<div class="home"><a href="../index.php">VGO.RU</a></div>
 			<div class="imgLogo"></div>
 		</div>
 		<div class="authBox">

@@ -14,7 +14,7 @@
 		</div>
 		<div class="authBox">
 			<div class="regist"><a href="">РЕГИСТРАЦИЯ</a></div>
-			<div class="auth"><a href="">ВХОД</a></div>
+			<div class="auth"><a href="authorization/index.php">ВХОД</a></div>
 		</div>
 	</div>
 	<div class="wrapper">
