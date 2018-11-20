@@ -8,6 +8,10 @@ body {
 	font-size: 14px;
 	color: #008080;
 }
+a {
+	text-decoration: none;
+	color: #fff;
+}
 form {
 	position: relative;
 	top: 150px;
@@ -65,7 +69,7 @@ label {
 	width: 170px;
 	height: 60px;
 }
-.site {
+.home {
 	width: 80px;
 	height: 60px;
 	text-align: center;

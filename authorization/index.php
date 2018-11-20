@@ -9,12 +9,12 @@
 <body>
 	<div class="top">
 		<div class="bigLogo">
-			<div class="site">VGO.RU</div>
+			<div class="home"><a href="">VGO.RU</a></div>
 			<div class="imgLogo"></div>
 		</div>
 		<div class="authBox">
-			<div class="regist">РЕГИСТРАЦИЯ</div>
-			<div class="auth">ВХОД</div>
+			<div class="regist"><a href="">РЕГИСТРАЦИЯ</a></div>
+			<div class="auth"><a href="">ВХОД</a></div>
 		</div>
 	</div>
 	<form action="" method="POST">
