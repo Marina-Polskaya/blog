@@ -40,12 +40,11 @@ h3 {
 	width: 170px;
 	height: 60px;
 }
-.text {
+.home {
 	width: 80px;
 	height: 60px;
 	text-align: center;
 	line-height: 55px;
-	font-size: 16px;
 }
 .imgLogo {
 	margin: auto;
@@ -132,7 +131,7 @@ h3 {
 	margin: 27px 0px 0px 15px;
 	width: 270px;
 	height: 190px;
-	background: url('../image/hallstatt.jpg') 0 0 no-repeat;
+	background: url('../image/defaultPic.png') 0 0 no-repeat;
 	background-size: cover;
 	border: 3px solid #008080;
 }

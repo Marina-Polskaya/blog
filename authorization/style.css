@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #F5F5F5;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #008080;
+}
+form {
+	position: relative;
+	top: 150px;
+	width: 350px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #008080;
+	border-style: dashed;
+	text-align: center;
+	font-weight: bold;
+}
+h3 {
+	padding: 5px 0 5px 0;
+	font-size: 14px;
+	color: #fff;
+}
+input {
+	position: absolute;
+	top: 0;
+	left: 70px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #F5F5F5;
+}
+button {
+	position: absolute;
+	left: 100px;
+	bottom: 50px;
+	width: 150px;
+	height: 40px;
+	color: #fff;
+	background-color: #008080;
+	font-weight: bold;
+	border-style: none;
+	cursor: pointer;
+}
+label {
+	font-size: 14px;
+}
+.top {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	background-color: #008080;
+	font-weight: bold;
+}
+.bigLogo {
+	display: flex;
+	flex-direction: row;
+	width: 170px;
+	height: 60px;
+}
+.site {
+	width: 80px;
+	height: 60px;
+	text-align: center;
+	line-height: 55px;
+}
+.imgLogo {
+	margin: auto;
+	width: 90px;
+	height: 60px;
+	background: url(../image/mount.png) 0 0 no-repeat;
+	background-size: cover;
+}
+.authBox {
+	position: relative;
+	min-width: 200px;
+	height: 60px;
+	font-size: 12px;
+}
+.regist {
+	position: absolute;
+	left: 0;
+	top: 10px;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	line-height: 35px;
+}
+.auth {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 70px;
+	height: 40px;
+	text-align: center;
+	line-height: 35px;
+}
+.topAuth {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: #008080;
+}
+.labelLog {
+	position: absolute;
+	left: 50px;
+	top: 90px;
+}
+.labelPass {
+	position: absolute;
+	left: 50px;
+	top: 150px;
+}
