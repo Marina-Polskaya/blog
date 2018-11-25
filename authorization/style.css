@@ -16,13 +16,13 @@ form {
 	width: 350px;
 	height: 300px;
 	background-color: #fff;
-	border: 1px solid #008080;
-	border-style: dashed;
 	text-align: center;
 	font-weight: bold;
+	border: 1px solid #008080;
+	border-style: dashed;
 }
 h3 {
-	padding: 5px 0 5px 0;
+	margin: 0;
 	font-size: 14px;
 	color: #fff;
 }
@@ -43,8 +43,12 @@ button {
 	cursor: pointer;
 }
 label {
+	margin-top: 20px;
+	height: 30px;
 	font-size: 14px;
+	border: 2px solid #000;
 }
+/*---------------------------------------------------------------------------------------*/
 .top {
 	position: fixed;
 	display: flex;
@@ -100,24 +104,22 @@ label {
 	text-align: center;
 	line-height: 35px;
 }
+/*-------------------------------------------------------------------------------------------------*/
 .topAuth {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
+	padding-top: 20px;
+	height: 40px;
 	background-color: #008080;
 }
+.formBody {
+	padding: 20px;
+	height: 200px;
 
+}
 .wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding-top: 60px;
+	margin-top: 60px;
+	padding-top: 100px;
 	width: 100%;
-}
-.labelLog {
-	
-}
-.labelPass {
-	
 }
