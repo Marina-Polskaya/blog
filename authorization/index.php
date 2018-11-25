@@ -17,17 +17,19 @@
 			<div class="auth"><a href="">ВХОД</a></div>
 		</div>
 	</div>
-	<form action="" method="POST">
-		<div class="topAuth">
-			<h3>Авторизация</h3>
-		</div>
-		<label for="login" class="labelLog">Логин
-			<input type="text" class="inputLog" id="login" placeholder="Введите логин">
-		</label>
-		<label for="password" class="labelPass">Пароль
-			<input type="password" id="password" placeholder="Введите пароль">
-		</label>
-		<button type="submit" name="submit">Войти</button>
-	</form>
+	<div class="wrapper">
+		<form action="" method="POST">
+			<div class="topAuth">
+				<h3>Авторизация</h3>
+			</div>
+			<label for="login" class="labelLog">Логин
+				<input type="text" class="inputLog" id="login" placeholder="Введите логин"/>
+			</label>
+			<label for="password" class="labelPass">Пароль
+				<input type="password" id="password" placeholder="Введите пароль"/>
+			</label>
+			<button type="submit" name="submit">Войти</button>
+		</form>
+	</div>
 </body>
 </html>
