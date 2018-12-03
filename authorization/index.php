@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="wrapper">
-		<form action="" method="POST">
+		<form method="POST" action="/blog/authorization/form-handler.php">
 			<div class="topAuth">
 				<h3>Авторизация</h3>
 			</div>
@@ -29,8 +29,8 @@
 						<label for="password">Пароль</label>
 					</div>
 					<div class="inputBox">
-						<input type="text" class="inputLog" id="login" placeholder="Введите логин"/>
-						<input type="password" id="password" placeholder="Введите пароль"/>
+						<input type="text" class="inputLog" name="login" id="login" placeholder="Введите логин"/>
+						<input type="password" name="password" id="password" placeholder="Введите пароль"/>
 					</div>	
 				</div>
 				<button type="submit" name="submit">Войти</button>
