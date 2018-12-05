@@ -21,9 +21,8 @@
 		<div class="wrapperMini">
 			<?php
 			require_once '../function.php';
-			printNewPreview();
-			printNewPreview();
-			printNewPreview();
+			// printNewPreview();
+			// printNewPreview();
 			?>
 		</div>
 	</div>

@@ -21,9 +21,15 @@
 		<div class="wrapperMini">
 			<?php
 			require_once 'function.php';
-			printNewPreview();
-			printNewPreview();
-			printNewPreview();
+			require_once 'authorization/Handler.php';
+			$handler = new Handler();
+			$handler->connect();
+			$pdoConnection = $handler->connect();
+			$stmt = $pdoConnection->query('select * from posts order by publ_date desc');
+			$resultObjectArray = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			foreach ($resultObjectArray as $post) {
+				printNewPreview($post);
+			}
 			?>
 		</div>
 	</div>

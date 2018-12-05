@@ -23,6 +23,7 @@
 	public function getPasswordForm($params) {
    		return $params['password'];
 	}
+
 }
 
 
