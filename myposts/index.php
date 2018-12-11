@@ -1,7 +1,6 @@
 <?php
-require_once '../authorization/Handler.php';
-require_once '../authorization/login.php';
 require_once '../authorization/Posts.php';
+
 session_start();
 if(!$_SESSION['user']){
 	header('Location:/blog/authorization/index.php');
@@ -24,7 +23,7 @@ else {
 		</div>
 		<div class="authBox">
 			<div class="regist" id="allPosts"><a href="">ЛЕНТА</a></div>
-			<div class="auth" id="exit"><a href="../index.php">ВЫХОД</a></div>
+			<div class="auth" id="exit"><a href="../authorization/logout.php">ВЫХОД</a></div>
 		</div>
 	</div>
 	<div class="wrapper">
@@ -32,7 +31,7 @@ else {
 		<?php
 
 		$posts = new Posts();
-		$posts->PrintAllUserPosts();
+		$posts->PrintUserPreviews();
 
 		?>		
 		</div>

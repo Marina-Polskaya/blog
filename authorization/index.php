@@ -14,7 +14,7 @@
 		</div>
 		<div class="authBox">
 			<div class="regist"><a href="">РЕГИСТРАЦИЯ</a></div>
-			<div class="auth"><a href="">ВХОД</a></div>
+			<!-- <div class="auth"><a href="">ВХОД</a></div> -->
 		</div>
 	</div>
 	<div class="wrapper">
@@ -22,7 +22,7 @@
 			<div class="topAuth">
 				<h3>Авторизация</h3>
 			</div>
-			<div class="formBody">
+			<div class="formBody"><!-- <div class="uncorrectPass">Пользователь не найден</div> -->
 				<div class="logPassWrapper">
 					<div class="labelBox">
 						<label for="login">Логин</label>

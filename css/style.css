@@ -148,11 +148,47 @@ h3 {
 	line-height: 40px;
 	overflow: hidden; /*около 40 символов*/
 }
-.textPreview{
+.textPreview {
 	width: 280px;
 	height: 102px;
 	margin: 0 20px 0 15px;
 	overflow: hidden;
 	/*color: #000;*/
+}
+/*-------------------------------------city----------------------------------------*/
+.cityBox {
+	position: fixed;
+	top: 60px;
+	left: 20px;
+	padding: 10px;
+	width: 250px;
+	min-height: 70px;
+	text-align: center;
+	background-color: #fff;
+	border: 2px solid #008080;
+	border-style: dashed;
+	border-top-style: none;
+}
+.cityYes {
+	position: absolute;
+	left:45px;
+	bottom: 15px;
+	width: 70px;
+	height: 24px;
+	line-height: 22px;
+	background-color: #008080;
+	color: #fff;
+	cursor: pointer;
+}
+.cityNo {
+	position: absolute;
+	right:45px;
+	bottom: 15px;
+	width: 70px;
+	height: 24px;
+	line-height: 22px;
+	background-color: #008080;
+	color: #fff;
+	cursor: pointer;
 }
 

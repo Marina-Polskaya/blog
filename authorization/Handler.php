@@ -1,5 +1,5 @@
 <?php
- class Handler {
+ abstract class Handler {
 
  	private $connection;
 	private $dsn = 'mysql:dbname=db_blog;host=localhost;charset=utf8';
@@ -15,7 +15,6 @@
 		$this->connection = new PDO($this->dsn, $this->user, $this->password, $this->options);
 		return $this->connection;
 	}
-
 
 }
 

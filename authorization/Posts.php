@@ -1,8 +1,6 @@
 <?php
 
-require_once 'Handler.php';
 require_once 'login.php';
-require_once 'PdoConnection.php';
 
 class Posts extends PdoConnection {
 
@@ -59,7 +57,6 @@ class Posts extends PdoConnection {
 
 			session_start();
 			$_SESSION['user'] = $login->getLoginForm($_POST);
-			// $login->setCurrentLoginForm('$login->getLoginForm($_POST)');
 
 			header('Location:/blog/myposts/index.php');
 
@@ -69,12 +66,11 @@ class Posts extends PdoConnection {
 		}
 	}
  
-	public function PrintAllUserPosts () {
+	public function PrintUserPreviews () {
 
 		$login = new Login();
-		$pdo = $login->getPdoConnection();
 
-		$stmtMyPosts = $pdo->prepare('select users.login, posts.* from users join posts where users.login = :login and :login = posts.author order by publ_date desc');
+		$stmtMyPosts = $login->getPdoConnection()->prepare('select users.login, posts.* from users join posts where users.login = :login and :login = posts.author order by publ_date desc');
 		$stmtMyPosts->execute([':login' => $_SESSION['user']]);
 		$resultMyPosts = $stmtMyPosts->fetchAll(PDO::FETCH_ASSOC);
 

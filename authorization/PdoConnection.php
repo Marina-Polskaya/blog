@@ -1,11 +1,11 @@
 <?php
 require_once 'Handler.php';
 
-class PdoConnection extends Handler {
+abstract class PdoConnection extends Handler {
 
 	protected function getPdoConnection(){
-		$handler = new Handler();
-		return $pdoConnection = $handler->connect();
+
+		return $this->connect();
 	}
 }
 
