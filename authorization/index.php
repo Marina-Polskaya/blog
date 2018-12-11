@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div class="wrapper">
-		<form method="POST" action="/blog/authorization/form-handler.php">
+		<form method="POST" action="/blog/authorization/check.php">
 			<div class="topAuth">
 				<h3>Авторизация</h3>
 			</div>

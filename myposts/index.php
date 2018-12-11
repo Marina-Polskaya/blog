@@ -1,3 +1,13 @@
+<?php
+require_once '../authorization/Handler.php';
+require_once '../authorization/login.php';
+require_once '../authorization/Posts.php';
+session_start();
+if(!$_SESSION['user']){
+	header('Location:/blog/authorization/index.php');
+}
+else {
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,18 +23,22 @@
 			<div class="imgLogo"></div>
 		</div>
 		<div class="authBox">
-			<div class="regist"><a href="">РЕГИСТРАЦИЯ</a></div>
-			<div class="auth"><a href="authorization/index.php">ВХОД</a></div>
+			<div class="regist" id="allPosts"><a href="">ЛЕНТА</a></div>
+			<div class="auth" id="exit"><a href="../index.php">ВЫХОД</a></div>
 		</div>
 	</div>
 	<div class="wrapper">
 		<div class="wrapperMini">
-			<?php
-			require_once '../function.php';
-			// printNewPreview();
-			// printNewPreview();
-			?>
+		<?php
+
+		$posts = new Posts();
+		$posts->PrintAllUserPosts();
+
+		?>		
 		</div>
 	</div>
 </body>
 </html>
+<?php
+	}
+?>
