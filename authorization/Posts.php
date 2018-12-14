@@ -1,7 +1,5 @@
 <?php
 
-require_once 'login.php';
-
 class Posts extends PdoConnection {
 
 	public function printNewPreview($post) {

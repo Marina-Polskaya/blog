@@ -1,6 +1,5 @@
 <?php
-//точка входа
-require_once 'Posts.php';
+require_once '../startSessionComposer.php';
 
 $posts = new Posts();
 

@@ -1,7 +1,4 @@
 <?php
-require_once 'PdoConnection.php';
-require_once '../myposts/Requests.php';
-
 
 class Login extends PdoConnection {
 

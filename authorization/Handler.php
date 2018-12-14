@@ -1,4 +1,5 @@
 <?php
+// namespace auth; 
  abstract class Handler {
 
  	private $connection;

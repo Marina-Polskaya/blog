@@ -1,7 +1,6 @@
 <?php
-require_once '../authorization/Posts.php';
+require_once '../startSessionComposer.php';
 
-session_start();
 if(!$_SESSION['user']){
 	header('Location:/blog/authorization/index.php');
 }
@@ -18,7 +17,7 @@ else {
 <body>
 	<div class="top">
 		<div class="bigLogo">
-			<div class="home"><a href="">VGO.RU</a></div>
+			<div class="home">VGO.RU</a></div>
 			<div class="imgLogo"></div>
 		</div>
 		<div class="authBox">

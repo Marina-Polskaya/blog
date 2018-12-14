@@ -1,3 +1,10 @@
+<?php
+require_once '..\startSessionComposer.php';
+if(isset($_SESSION['user'])){
+	header('Location:/blog/myposts/index.php');
+}
+else {
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -14,7 +21,6 @@
 		</div>
 		<div class="authBox">
 			<div class="regist"><a href="">РЕГИСТРАЦИЯ</a></div>
-			<!-- <div class="auth"><a href="">ВХОД</a></div> -->
 		</div>
 	</div>
 	<div class="wrapper">
@@ -39,3 +45,4 @@
 	</div>
 </body>
 </html>
+<?php }?>
