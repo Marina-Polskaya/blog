@@ -17,11 +17,10 @@ else {
 <body>
 	<div class="top">
 		<div class="bigLogo">
-			<div class="home">VGO.RU</a></div>
+			<div class="home"><a href="../index.php" title="Лента">VGO.RU</a></div>
 			<div class="imgLogo"></div>
 		</div>
 		<div class="authBox">
-			<div class="regist" id="allPosts"><a href="">ЛЕНТА</a></div>
 			<div class="auth" id="exit"><a href="../authorization/logout.php">ВЫХОД</a></div>
 		</div>
 	</div>

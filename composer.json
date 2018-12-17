@@ -2,6 +2,7 @@
     "name": "blog",
     "type": "project",
     "require": {
+    	"phpunit/phpunit": "^7.5"
     },
     "autoload": {
         "psr-4": {

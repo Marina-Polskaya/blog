@@ -23,12 +23,50 @@ class Posts extends PdoConnection {
 					<div class=\"textPreview\">";
 					print($post['text']);
 					echo "</div>
-					<button>Читать полностью</button>
+					<button class=\"detailed\"><a href=\"../myposts/detailed/index.php?postId=".$post['post_id']."\">Читать полностью</a></button>
 				</div>
 			</div>";
 	}
 
-	private function isNotEmpty ($array) { //return true, if it's not empty
+	public function printOneFullPost($post) {
+
+		echo "<div class=\"outsidePostBox\">
+				<div class=\"leftBigLabel\">
+					<div class=\"leftLabel\">
+						<div class=\"labelMini\">".$post[0]['author']."</div>
+						<div class=\"labelMini\">".$post[0]['publ_date']."</div>
+					</div>";
+					if(isset($_SESSION['user'])){
+					echo "<div class=\"midLabel\"><a href=\"edit/index.php?postId=".$post[0]['post_id']."\">Редактировать</a></div>
+					<div class=\"bottomLabel\"><a href=\"delete/index.php?postId=".$post[0]['post_id']."\">Удалить</a></div>";
+				}
+				echo "</div>
+				<div class=\"postBox\">
+					<div class=\"headerBigBox\"><h1>".$post[0]['header']."</h1></div>
+					<div class=\"imgBigBox\"></div>
+					<div class=\"textBigBox\">".$post[0]['text']."</div>
+					<button><a href=\"../\">Вернуться к постам</a></button>
+				</div>
+			</div>";
+	}
+
+	public function printAllUsersPreview () {
+		$arrayPosts = $this->getObjAllUsersPosts();
+		if($this->isNotEmpty($arrayPosts)) {
+			foreach ($arrayPosts as $allPosts) {
+				$this->printNewPreview($allPosts);
+			}
+			}
+	}
+
+	public function getObjAllUsersPosts () {
+		$login = new Login();
+		$stmtAllPosts = $login->getPdoConnection()->query('select * from posts order by publ_date desc');
+		$resultAllPosts = $stmtAllPosts->fetchAll(PDO::FETCH_ASSOC);
+		return $resultAllPosts;
+	}
+
+	public function isNotEmpty ($array) { //return true, if it's not empty
 
 		if (count($array)>0){
 			$boolRes = true;
@@ -38,8 +76,6 @@ class Posts extends PdoConnection {
 		}
 		return $boolRes;
 	}
-
-
 
 	public function enterIfLoginTrue () {
 
@@ -63,6 +99,8 @@ class Posts extends PdoConnection {
 			 header('Location:/blog/authorization/index.php');
 		}
 	}
+
+
  
 	public function PrintUserPreviews () {
 
@@ -72,11 +110,17 @@ class Posts extends PdoConnection {
 		$stmtMyPosts->execute([':login' => $_SESSION['user']]);
 		$resultMyPosts = $stmtMyPosts->fetchAll(PDO::FETCH_ASSOC);
 
-
 		foreach ($resultMyPosts as $post) {
 			$this->printNewPreview($post);
-
 		}
+	}
+
+	public function getOnePostOnlyToID ($postId) {
+		$login = new Login();
+		$stmtMyPost = $login->getPdoConnection()->prepare('select * from posts where posts.post_id = :postId');
+		$stmtMyPost->execute([':postId' => $postId]);
+		$resultMyPost = $stmtMyPost->fetchAll(PDO::FETCH_ASSOC);
+		return $resultMyPost;
 	}
 }
 	
